@@ -1,0 +1,25 @@
+{
+  "name": "@zurich/angular-sdk",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Zurich Angular SDK",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "@zurich/web-sdk": "^3.0.0",
+    "@angular/common": "^12.2.0",
+    "@angular/core": "^12.2.0",
+    "@angular/forms": "^12.2.0"
+  },
+  "files": [
+    "components",
+    "model",
+    "style"
+  ],
+  "engines": {}
+}

@@ -1,0 +1,26 @@
+<div name="Name" class="forms--shape">
+	<div class="textfield textfield-select" [ngClass]="textfieldStyle()" tabindex="1" (click)="dropdownClick()" (blur)="dropdownBlur()">
+		<div class="ss-8168 ss-main textfield-control dropdown-select initialized">
+			<div class="ss-single-selected" [ngClass]="singleSelectedStyle()">
+				<span class="z-placeholder">{{Selection}}
+					<span *ngIf="Value==0" class="ss-disabled">{{Placeholder}}</span>
+				</span>
+				<span class="ss-deselect ss-hide">x</span>
+				<span class="ss-arrow">
+					<span [ngClass]="iconStyle()"></span>
+				</span>
+			</div>
+			<div class="ss-content" [ngClass]="contentStyle()">
+				<div class="ss-list" role="listbox">
+					<div class="ss-option ss-hide"></div>
+					<div class="ss-option" role="option" (click)="itemClick(item.value)" *ngFor="let item of Data"
+						data-id="{{item.value}}">{{item.text}}</div>
+				</div>
+			</div>
+			<label class="textfield-label">{{Title}}</label>
+		</div>
+		<div *ngIf="textfieldStyle().includes('has-error')" class="textfield-helper">
+			<span class="textfield-helper-message">{{ErrorMessage}}</span>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,10 @@
+<div class="forms--shape">
+	<div class="textfield textfield--float-label" [ngClass]="Style">
+		<input [id]="id" [name]="Name" class="textfield-control" [disabled]="Disabled" [ngClass]="InputStyle"
+			[(ngModel)]="Value" [type]="Type" [placeholder]="PlaceHolder" [maxlength]="MaxLength" />
+		<label class="textfield-label" [for]="id">{{Title}}</label>
+		<div *ngIf="Style.includes('has-error')" class="textfield-helper">
+			<span class="textfield-helper-message">{{ErrorMessage}}</span>
+		</div>
+	</div>
+</div>

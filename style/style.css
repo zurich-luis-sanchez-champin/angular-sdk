@@ -1,0 +1,11 @@
+ .z-placeholder {
+    display: flex;
+    flex: 1 1 100%;
+    align-items: center;
+    text-align: left;
+    width: calc(100% - 30px);
+}
+
+.margen {
+    margin-bottom: 2px;
+}

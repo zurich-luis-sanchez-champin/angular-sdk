@@ -1,0 +1,27 @@
+<div name="name" class="forms--shape">
+  <div class="textfield textfield-select" [ngClass]="textfieldStyle()" tabindex="1" (click)="dropdownClick()"
+    (blur)="dropdownBlur()">
+    <div class="ss-27934 ss-main textfield-control dropdown-select initialized ss-selected">
+      <div class="ss-multi-selected" [ngClass]="multiSelectedStyle()">
+        <div class="ss-values">
+          <span *ngIf="Empty" class="ss-disabled">{{Placeholder}}</span>
+          <div class="ss-value" *ngFor="let item of Selection" data-id="{{item.value}}"><span
+              class="ss-value-text">{{item.text}}</span><span (click)="itemArribaClick(item.value)"
+              class="ss-value-delete">x</span></div>
+        </div>
+        <div class="ss-add"><span class="ss-plus" [ngClass]="iconStyle()"></span></div>
+      </div>
+      <div class="ss-content" [ngClass]="contentStyle()">
+        <div class="ss-list" role="listbox">
+          <div class="ss-option ss-hide"></div>
+          <div class="ss-option" [ngClass]="optionStyle(item.value)" role="option" (click)="itemClick(item.value)"
+            *ngFor="let item of Data" data-id="{{item.value}}">{{item.text}}</div>
+        </div>
+      </div>
+      <label class="textfield-label">{{Title}}</label>
+    </div>
+    <div *ngIf="textfieldStyle().includes('has-error')" class="textfield-helper">
+      <span class="textfield-helper-message">{{ErrorMessage}}</span>
+    </div>
+  </div>
+</div>

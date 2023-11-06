@@ -1,0 +1,22 @@
+{
+  "name": "@zurich/angular-sdk",
+  "version": "1.0.0",
+  "description": "Zurich Angular SDK",
+  "main": "angular-sdk.module.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "SDK",
+    "components",
+    "angular"
+  ],
+  "dependencies": {
+    "@zurich/web-sdk": "^3.0.0",
+    "@angular/common": "^12.2.0",
+    "@angular/core": "^12.2.0",
+    "@angular/forms": "^12.2.0"
+  },
+  "author": "Luis Sánchez (luis.sanchez.champin@zurich.com)",
+  "license": "ISC"
+}
